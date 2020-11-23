@@ -20,14 +20,14 @@ layout: default
 		<p>From the archives of this journal:</p>
 		<ul class="disc">
 			{% for post in site.posts offset: 3 limit 10 %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			<li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</ul>
 		<h4>Archive</h4>
 		<p><a href="{{site.url}}/archive.html">All post</a></p>
 		<h4>About Edward Hyde</h4>
 		<p>A night owl, citizen of London, of questionable character.</p>
-		<p><a href="/feed.xml">Subscribe to feed</a></p>
+		<p><a href="{{site.url}}/feed.xml">Subscribe to feed</a></p>
 	</div>
 </div>
 
